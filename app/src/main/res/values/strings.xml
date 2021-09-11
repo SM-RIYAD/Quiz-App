@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Quiz APP</string>
     <string name="_0_25">0/25</string>
+    <string name="_0">0</string>
+    <string name="what_is_your_name">What is your name?</string>
+    <string name="riyad">RIYAD</string>
+    <string name="alex">ALEX</string>
+    <string name="hina">hina</string>
+    <string name="asim">Asim</string>
+    <string name="answer">answer</string>
 </resources>

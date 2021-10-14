@@ -8,4 +8,6 @@
     <string name="hina">hina</string>
     <string name="asim">Asim</string>
     <string name="answer">answer</string>
+    <string name="welcome_to" />
+    <string name="attend" />
 </resources>

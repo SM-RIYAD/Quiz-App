@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/done.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/gradiant.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/gradiant_bg_quizid.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/ring.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/drawable/roundeble_stroke.xml" value="0.19814814814814816" />
-        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/88018/AndroidStudioProjects/QuizAPP/app/src/main/res/layout/activity_quiz_id.xml" value="0.25" />
       </map>
     </option>
   </component>

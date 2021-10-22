@@ -18,7 +18,7 @@
     app:cardCornerRadius="41dp"
 app:cardBackgroundColor="#2E334E"
     android:layout_margin="17dp"
-    android:elevation="7dp"
+    android:elevation="30dp"
     android:id="@+id/card_progress"
 
 
@@ -36,7 +36,7 @@ app:cardBackgroundColor="#2E334E"
         android:layout_width="match_parent"
         android:layout_height="41dp"
         android:background="@drawable/gradiant"
-        android:scaleX=".5"
+        android:scaleX="0.0"
         android:transformPivotX="0dp" />
 
     <TextView
@@ -44,7 +44,7 @@ app:cardBackgroundColor="#2E334E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/_0_25"
+        android:text="@string/_0_null"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/white" />
 
@@ -77,6 +77,8 @@ app:cardBackgroundColor="#2E334E"
         app:cardCornerRadius="17dp"
         app:cardElevation="17dp"
         android:id="@+id/card_questions"
+        tools:visibility="visible"
+
        >
 
         <ScrollView
@@ -184,7 +186,7 @@ android:id="@+id/scroll_content"
         app:cardBackgroundColor="#130232"
         app:cardCornerRadius="1000dp"
         app:cardElevation="17dp"
-
+tools:visibility="visible"
         >
 
         <TextView
@@ -210,76 +212,69 @@ android:id="@+id/scroll_content"
         android:id="@+id/card_result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+android:visibility="gone"
+        tools:visibility="gone"
 
-
-        android:visibility="gone"
         >
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="gone"
-    >
-    <ProgressBar
-        android:id="@+id/progress_score_bar"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:progressDrawable="@drawable/ring"
-        android:indeterminateOnly="false"
-        tools:progress="20"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="awsome!!!"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:layout_above="@id/progress_score_bar"
-        android:layout_centerHorizontal="true"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="20%"
-        android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-/>
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:text="Play again"
-    android:textAllCaps="false"
-    android:id="@+id/button_play"
-    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-      android:layout_above="@id/button_play"
-        android:text="Quit"
-        android:textAllCaps="false"
-        android:id="@+id/button_quit"
-        android:backgroundTint="#ddd"
-        android:textColor="@color/black"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        />
+            <ProgressBar
+                android:id="@+id/progress_score_bar"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:indeterminateOnly="false"
+                android:progress="100"
+                android:progressDrawable="@drawable/ring"
+                tools:progress="30" />
 
+            <TextView
+                android:id="@+id/text_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/progress_score_bar"
+                android:layout_centerHorizontal="true"
+                android:text="awsome!!!"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
 
+            <TextView
+                android:id="@+id/text_score_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="20%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="20sp" />
 
+            <Button
+                android:id="@+id/button_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Play again"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/button_quit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/button_play"
+                android:backgroundTint="#ddd"
+                android:text="Quit"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
 
-
-
+                />
 
 
-
-
-</RelativeLayout>
-
-
-
+        </RelativeLayout>
 
 
     </androidx.cardview.widget.CardView>
